@@ -1,5 +1,5 @@
-FROM phusion/baseimage:0.9.16
-MAINTAINER Yoshiofthewire <Yoshi@urlxl.com>
+FROM phusion/baseimage:focal-1.2.0
+MAINTAINER owroc <info@robcovington.com>
 #Based on the work of gfjardim <gfjardim@gmail.com>
 
 #########################################
@@ -27,7 +27,7 @@ ADD supervisord.conf supervisord.conf
 ##         EXPORTS AND VOLUMES         ##
 #########################################
 
-VOLUME /hdhomerun
+VOLUME /dvr
 EXPOSE 65001/udp 65002
 
 CMD ["-n", "-c", "/supervisord.conf"]

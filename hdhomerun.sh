@@ -1,3 +1,3 @@
 #!/bin/sh
-exec /hdhomerun/hdhomerun_record start
+exec /opt/hdhomerun/hdhomerun_record start --conf /opt/hdhomerun/hdhomerun.conf
 

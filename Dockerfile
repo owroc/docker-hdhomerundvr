@@ -10,9 +10,13 @@ CMD ["/sbin/my_init"]
 
 # ...put your own build instructions here...
 RUN mkdir /etc/service/hdhomerun
+RUN mkdir /hdhomerun
 COPY hdhomerun.sh /etc/service/hdhomerun/run
+COPY hdhomerun.conf /hdhomerun
+COPY hdhomerun_record /hdhomerun
 RUN chmod +x /etc/service/hdhomerun/run
+VOLUME /hdhomerun
 
-# Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# CLEAN UP APT WHEN DONE.
+RUN APT-GET CLEAN && RM -RF /VAR/LIB/APT/LISTS/* /TMP/* /VAR/TMP/*
 

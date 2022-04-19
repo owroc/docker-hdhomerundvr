@@ -1,3 +1,3 @@
 #!/bin/sh
-exec /opt/hdhomerun/hdhomerun_record start --conf /opt/hdhomerun/hdhomerun.conf
+exec /opt/hdhomerun/hdhomerun_record foreground --conf /opt/hdhomerun/hdhomerun.conf
 

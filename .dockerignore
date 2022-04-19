@@ -1,5 +1,3 @@
 #files to exclude from the docker build
 archive
 README.md
-hdhomerun_record
-
